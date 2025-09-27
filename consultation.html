@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Free Consultation - Canyon Lake TMS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">Canyon Lake TMS</a>
+            <div>
+                <a href="contact.html" class="nav-link">Contact Us</a>
+                <a href="consultation.html" class="btn btn-primary">Free Consultation</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Free Consultation</h1>
+            <p>Take the first step toward lasting relief. Our TMS specialists will help determine if TMS therapy is right for you.</p>
+        </div>
+    </section>
+
+    <!-- Consultation Form -->
+    <section class="content-section">
+        <div class="container">
+            <div class="form-container">
+                <h2>Free TMS Consultation Request</h2>
+                <p>Fill out the form below and we'll contact you within 24 hours to schedule your free consultation.</p>
+
+                <div class="consultation-benefits">
+                    <h3>What to Expect During Your Free Consultation:</h3>
+                    <ul class="benefits-list">
+                        <li>Review of your medical history and current symptoms</li>
+                        <li>Discussion of TMS therapy and how it works</li>
+                        <li>Assessment of whether TMS is right for you</li>
+                        <li>Answer all your questions about treatment</li>
+                        <li>Insurance and payment options discussion</li>
+                    </ul>
+                </div>
+
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="condition">What brings you to TMS therapy?</label>
+                        <select id="condition" name="condition">
+                            <option value="">Select your main concern</option>
+                            <option value="depression">Depression</option>
+                            <option value="treatment-resistant">Treatment-Resistant Depression</option>
+                            <option value="anxiety">Anxiety</option>
+                            <option value="ocd">OCD</option>
+                            <option value="ptsd">PTSD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Tell us briefly about your situation</label>
+                        <textarea id="message" name="message" placeholder="A few sentences about what you're experiencing and what you hope TMS can help with..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.2rem; padding: 18px;">Request Free Consultation</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="contact-info">
+                <h3>
+                    Canyon Lake TMS
+                </h3>
+                <p><a href="tel:+18302515017" style="color: #e4e8f6; text-decoration: none;">(830) 251-5017</a></p>
+                <p><a href="mailto:info@windmillwellnessranch.com" style="color: #e4e8f6; text-decoration: none;">info@windmillwellnessranch.com</a></p>
+            </div>
+            <div class="address-info" style="padding-top: 48px;">
+                <h3>Location</h3>
+                <p>26229 N. Cranes Mill Rd</p>
+                <p>Canyon Lake, TX 78133</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            
+            // Simple validation
+            if (!name || !phone) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Simulate form submission
+            alert(`Thank you, ${name}! We have received your consultation request and will contact you within 24 hours to schedule your free consultation.`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
