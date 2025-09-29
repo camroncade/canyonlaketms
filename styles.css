@@ -130,6 +130,25 @@ body {
     transform: translateY(-2px);
 }
 
+@media (max-width: 900px) {
+    .what-is-tms-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+    .what-is-tms-image {
+        min-height: 180px !important;
+        max-width: 100% !important;
+    }
+}
+@media (max-width: 600px) {
+    .what-is-tms-image {
+        min-height: 120px !important;
+    }
+    .what-is-tms-grid {
+        gap: 16px !important;
+    }
+}
+
 .why-choose-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
