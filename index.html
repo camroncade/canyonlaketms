@@ -58,17 +58,38 @@
     <!-- Why Choose Us Section -->
     <section class="section">
         <div class="container">
-            <h2>Why Choose Windmill Wellness Ranch for TMS?</h2>
-            <p>At Windmill Wellness Ranch, healing goes beyond symptom relief. Our certified clinicians deliver TMS therapy in a supportive environment designed to care for the whole person — mind, body, and spirit.</p>
-            
-            <ul class="benefits-list">
-                <li>Experienced, licensed providers with specialized TMS training</li>
-                <li>Integrated mental health and addiction recovery programs</li>
-                <li>Private, comfortable treatment rooms in a peaceful setting</li>
-                <li>Conveniently located in Canyon Lake, TX — serving San Antonio, Austin, and the Texas Hill Country</li>
-            </ul>
+            <div class="why-choose-grid">
+                <!-- Left column: Map -->
+                <div>
+                    <div class="map-embed-wrapper">
+                        <!-- Embedded Google Map with Pin for Windmill Wellness Ranch -->
+                        <iframe
+                            width="100%"
+                            height="420"
+                            frameborder="0"
+                            style="border:0; display: block;"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALJW9sQUGOgi12cOiLH2MhLXqg9gy5ioc&q=Windmill+Wellness+Ranch&zoom=9"
+                            allowfullscreen
+                            aria-label="Google Map showing Windmill Wellness Ranch location">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Right column: Content -->
+                <div>
+                    <h2 style="text-align: left;">Why Choose Windmill Wellness Ranch for TMS?</h2>
+                    <p style="text-align: left;">At Windmill Wellness Ranch, healing goes beyond symptom relief. Our certified clinicians deliver TMS therapy in a supportive environment designed to care for the whole person — mind, body, and spirit.</p>
+                    
+                    <ul class="benefits-list">
+                        <li>Experienced, licensed providers with specialized TMS training</li>
+                        <li>Integrated mental health and addiction recovery programs</li>
+                        <li>Private, comfortable treatment rooms in a peaceful setting</li>
+                        <li>Conveniently located in Canyon Lake, TX — serving San Antonio, Austin, and the Texas Hill Country</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Conditions We Treat Section -->
     <section class="section">
@@ -109,32 +130,70 @@
             <h2>What to Expect During Treatment</h2>
             <p>Your first step is a consultation with our team to confirm if TMS is right for you. After approval, here's what the treatment process looks like:</p>
             
-            <div class="process-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Mapping Session</h3>
-                    <p>We locate the precise areas of the brain to target for your specific condition.</p>
+            <div class="how-it-works-grid" style="
+                display: flex;
+                gap: 40px;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            ">
+                <!-- Left column: image -->
+                <div class="how-it-works-image" style="
+                    margin-top: 48px;
+                    min-width: 250px;
+                    min-height: 300px;
+                    width: 45%;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    background-image: url('TMS_process_image.png');
+                    background-size: cover;
+                    background-position: center;
+                    flex: 1 1 300px;
+                    max-width: 500px;
+                ">
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Treatment Sessions</h3>
-                    <p>You'll sit in a comfortable chair while a magnetic coil delivers gentle pulses. Each session lasts about 20 minutes.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Treatment Schedule</h3>
-                    <p>Typically 5 sessions per week for 6–8 weeks, depending on your individual treatment plan.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Daily Life</h3>
-                    <p>No downtime — you can return to work, school, or family immediately after each session.</p>
+                <!-- Right column: steps -->
+                <div class="how-it-works-steps" style="
+                    flex: 2 1 350px;
+                    min-width: 280px;
+                    max-width: 700px;
+                    width: 50%;
+                    margin: 0 auto;
+                ">
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Mapping Session</h3>
+                                <p>We locate the precise areas of the brain to target for your specific condition.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Treatment Sessions</h3>
+                                <p>You'll sit in a comfortable chair while a magnetic coil delivers gentle pulses. Each session lasts about 20 minutes.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Treatment Schedule</h3>
+                                <p>Typically 5 sessions per week for 6–8 weeks, depending on your individual treatment plan.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Daily Life</h3>
+                                <p>No downtime — you can return to work, school, or family immediately after each session.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #667eea;">
+                        <strong>Many patients notice improvements within the first few weeks, with lasting relief after the full course of treatment.</strong>
+                    </p>
                 </div>
             </div>
-            
-            <p style="text-align: center; margin-top: 40px; font-size: 1.2rem; color: #667eea;">
-                <strong>Many patients notice improvements within the first few weeks, with lasting relief after the full course of treatment.</strong>
-            </p>
         </div>
     </section>
 
